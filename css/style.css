@@ -1,6 +1,6 @@
 /* Font import */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 /* Global values */
 *{
     margin: 0;
@@ -9,12 +9,15 @@
 :root{
     --text-color: #333;
     --dark-text: #272727;
+    --main-color: #23b950;
 }
 body{
     font-family: 'Roboto', sans-serif;
     overflow: hidden;
 }
-
+.text-color{
+    color: var(--main-color);
+}
 /* navbar area */
 .navbar{
     padding: 0 7%;
@@ -22,12 +25,12 @@ body{
     box-shadow: 5px 2px 10px lightgrey;
 }
 .navbar-brand{
-    font-family: 'Pacifico', cursive;
-    font-size: 30px;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 25px;
     color: var(--dark-text);
 }
 .ham-icon img{
-    height: 40px;
+    height: 30px;
     
 }
 .nav-item{
@@ -50,19 +53,34 @@ body{
     padding: 10px 7%;
 }
 .hero-text {
-    line-height: 15px;
+    line-height: 18px;
 }
 .hero-text h1{
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 600;
-    color: #333;
+    color: rgb(70, 70, 70);
+}
+.hero-text h4{
+    color: rgb(80, 80, 80);
+    margin-bottom: 20px;
+}
+.hero-text h5{
+    margin-bottom: 10px;
 }
 .hero-text p{
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 500;
-    color: grey;
+    color: rgb(78, 78, 78);
+    margin-bottom: 5px;
 }
 
+.hero-img{
+    text-align: center;
+}
+.hero-img img{
+    height: 250px;
+    margin: 10px;
+}
 
 /* Cate */
 

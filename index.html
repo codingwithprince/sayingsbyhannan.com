@@ -11,7 +11,10 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Main CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive CSS  -->
 
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>sayings by hannan</title>
 </head>
 
@@ -20,7 +23,7 @@
         <!-- navbar area -->
         <section id="navbar">
             <nav class="navbar navbar-expand-lg">
-                <a class="navbar-brand" href="#">Sayings by hannan</a>
+                <a class="navbar-brand" href="#">Sayings by Hannan</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -53,16 +56,17 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 d-flex justify-content-center align-items-center">
-                        <div class="hero-text">
-                            <h1>Muhammad Hannan</h1>
-                            <p>Author</p>
-                            <p>মানিলে বাণীতে</p>
-                            <p>ফোঁটে ফুল পদ্মা-বকুল ।</p>
+                        <div class="hero-text" data-aos="fade-right">
+                            <h1>Mohammad <span class="text-danger">Hannan</span> </h1>
+                            <h4 class="text-grey">Author</h4>
+                            <h5>বাণী___</h5>
+                            <p>আদর্শ ও নীতির কথাগুলো সংক্ষেপে বাণী ।</p>
+                            <p>মানিলে বাণীতে ফোঁটে ফুল পদ্মা-বকুল ।</p>
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="hero-img">
-
+                        <div class="hero-img" data-aos="fade-left">
+                            <img src="images/logo.png" class="img-fluid" alt="">
                         </div>
                     </div>
                 </div>
@@ -85,6 +89,7 @@
         
     </main>
     <!-- Optional JavaScript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/script.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
