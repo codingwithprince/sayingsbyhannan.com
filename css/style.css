@@ -9,7 +9,7 @@
 :root{
     --text-color: #333;
     --dark-text: #272727;
-    --main-color: #23b950;
+    --main-color: #df4759;
 }
 body{
     font-family: 'Roboto', sans-serif;
@@ -27,14 +27,14 @@ body{
 .navbar-brand{
     font-family: 'Patrick Hand', cursive;
     font-size: 25px;
-    color: var(--dark-text);
+    color: var(--main-color);
 }
 .ham-icon img{
     height: 30px;
     
 }
 .nav-item{
-    margin: 5px 15px;
+    margin: 5px 7px;
 }
 .nav-item a{
     font-size: 17px;
@@ -42,14 +42,28 @@ body{
     font-weight: 500;
     transition: 0.1s ease-in;
 }
+.nav-item a i{
+    font-size: 17px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    padding-top: 5px;
+    color: 	#df4759;
+    border: 1px solid #df4759;
+    border-radius: 50%;
+}
+.nav-item a i:hover{
+    background-color: #df4759;
+    color: 	#fff;
+}
 .nav-item a:hover{
-    transform: translateY(-2px);
-    margin: 0 5px;
+    color: 	#df4759;
 }
 
 /* Hero area */
 #hero-area{
-    margin: 50px 0;
+    margin: 10px 0;
+    margin-bottom: 20px;
     padding: 10px 7%;
 }
 .hero-text {
@@ -92,9 +106,20 @@ body{
 .cate li{
     margin: 0 ;
     padding: 5px 20px;
-    background-color: floralwhite;
     border-left: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    box-shadow: 2px 2px 10px lightgrey;
 }
 .cate li a{
-    color: #242424;
+    color: var(--text-color);
+    font-weight: 500;
+    text-decoration: none;
+   
+}
+.cate li{
+    transition: 0.3s ease;
+}
+.cate li:hover{
+    scale: 1.2;
+    background-color: #fff;
 }
