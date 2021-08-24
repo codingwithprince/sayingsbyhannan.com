@@ -1,307 +1,327 @@
 <!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Responsive CSS  -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Responsive CSS -->
     <link rel="stylesheet" href="css/responsive.css">
-    <!-- AOS CSS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- Font awesome CSS -->
+    <!-- Font awesome CSS-->
     <link rel="stylesheet" href="css/all.css">
 
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
     <title>sayings by hannan</title>
-</head>
-
-<body>
+  </head>
+  <body>
     <header>
-        <!-- navbar area -->
-        <section id="navbar">
-            <nav class="navbar navbar-expand-lg">
-                <a class="navbar-brand" href="#">Sayings by Hannan</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="ham-icon">
-                        <i class="fas fa-bars"></i>
-                    </span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" target="result" href="https://www.facebook.com/Sayingsbyhannan">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a target="result" class="nav-link" href="https://www.instagram.com/sayings_by_hannan/">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" target="result" href="https://twitter.com/sayingsbyhannan?lang=en">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </section>
-        <!-- Hero img -->
-
-        <section id="hero-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 d-flex justify-content-center align-items-center">
-                        <div class="hero-img" data-aos="fade-right">
-                            <img src="images/logo.png" class="img-fluid" alt="">
-                        </div>
-
-
-                    </div>
-                    <div class="col-md-6 d-flex justify-content-center align-items-center">
-                        <div class="hero-text" data-aos="fade-left">
-                            <h1>Mohammad <span class="text-hero">Hannan</span> </h1>
-                            <h4 class="text-writer">Writer <i class="fas fa-pen-alt text-white"></i></h4>
-                            <h5>বাণী___</h5>
-                            <p>আদর্শ ও নীতির কথাগুলো সংক্ষেপে বাণী ।</p>
-                            <p>মানিলে বাণীতে ফোঁটে ফুল পদ্মা-বকুল ।</p>
-                        </div>
-                    </div>
-                </div>
+        <section id="navbar-area">
+          <nav id="navbar_top" class="navbars d-flex justify-content-around">
+            <div class="navbar-brand">
+              <a href="#">Sayings by Hannan</a>
             </div>
+            
+            <button class="menuBtn" id="menuBtn">
+              <i class="fas fa-bars"></i>
+            </button>
+          </nav>
         </section>
-        <!-- Categories area-->
-        <section id="categories">
-            <ul class="d-flex justify-content-center cate">
-                <li> <a href="#">বাণী</a></li>
-                <li> <a href="#">উক্তি</a></li>
-                <li> <a href="#">প্রেম</a></li>
-                <li> <a href="#">হাসি</a></li>
-                <li> <a href="#">কবিতা</a></li>
-                <li> <a href="#">অন্যান্য</a></li>
-                <li> <a href="#">So What?</a></li>
-            </ul>
-        </section>
+        <div id="sidebarArea">
+            <div class="list">
+              <i class="fas fa-times" id="cross"></i>
+              <ul class="cate">
+                <li><a href="">বাণী</a></li>
+                <li><a href="">উক্তি</a></li>
+                <li><a href="">প্রেম</a></li>
+                <li><a href="">হাসি</a></li>
+                <li><a href="">কবিতা</a></li>
+                <li><a href="">অন্যান্য</a></li>
+                <li><a href="">So What?</a></li>
+              </ul>
+            </div>
+        </div>
     </header>
     <main>
-        <section class="container poem-area">
-            <div class="poem-section">
-                <div class="row">
-                    <div class="col-md-6 d-flex justify-content-center align-items-center">
-                        <div class="poem-img">
-                            <img src="images/bg-2.jpg" class="img-fluid" alt="">
-                        </div>
+      <section id="hero-area">
+        <div class="container">
+          <div class="menu-items d-flex align-items-center justify-content-center">
+            <ul class="menu-item">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+            <div class="row">
+                <div class="col-md-6 d-flex justify-content-center align-items-center">
+                    <div class="hero-img" data-aos="fade-right">
+                        <img src="images/logo.png" class="img-fluid" alt="">
                     </div>
-                    <div class="col-md-6">
-                        <div class="main-poem">
-                            <p class="poem-title">প্রতীক্ষিত কৃষাণের দৃষ্টি</p>
-                            <p class="poem-writer">মোহম্মদ হান্নান </p>
-                            <p class="poem-text">
-                                বাহু বলে দু'হাত তুলে ধ্যানমগ্ন কৃষাণ; <br>
-                                প্রভুর চরণ ধূলােয় ভ্রাম্য বিচারে চাহি। <br>
-                                আমারি ক্ষেতের ফসল গুলো তৃষ্ণীয় মরা,<br>
-                                তপ্ত-বালুকায় কাণ্ড ফুলও গিয়াছে শুকি।<br>
-                                আষাঢ় সাধ বুকে লয়ে শূন্য মাঠে,<br>
-                                প্রান্তরে বসে আকৃতি দয়াময় দৃষ্টি।<br>
-                                মাটি ফেটে চৌচির চাষ যােগ্য জমি,<br>
-                                কর্কশ খরা পড়িছে ফসলিত ঘরয়ায়।<br>
-                                আশার ঠাই রহিবে না-কি পরের জন্মে,<br>
-                                করুণ ক্রন্দন হা-হা কার কৃষাণ থুলি।<br>
-                                কৃষাণ দলে দলে চাহি গগণে তাকাইয়া,<br>
-                                আহ্বানে মােহন মায়ার গানে সুরে-সুরে,<br>
-                                “আল্লাহ মেঘ দে-বৃষ্টি দে-ছায়া দে'রে তুই”<br>
-                                তাের জপে মুই, কৃষাণ-কৃষাণ-কৃষাণ,<br>
-                                আসে মেঘপুঞ্জ প্রতীক্ষিত সৃষ্টির বৃষ্টি।<br> <br>
-
-                                রাশি রাশি খর-স্রোত কৃষাণ দল,<br>
-                                বৃষ্টি নামায় দুই আঁখির ঢল।<br>
-                                মেঘে মেঘে নতুন রূপে সাড়া,<br>
-                                আঁধারের তাঁরা বাড়ায় ঝড়।<br>
-                                হাসি হাসি কৃষাণ পরাণ বাঁচি,<br>
-                                মাটির গায়ে শান্ত ধারার জল।<br>
-                                ছােট ছােট বীজ অঙ্কুর পাতি,<br>
-                                জেগে ওঠে লতা-পাতা সাগর।<br>
-                                প্রাণে প্রাণে ধূসর শুষ্ক চাদর,<br>
-                                বৃষ্টি ভরে আবাদি ফসল গুলি।<br>
-                                ক্ষেতে ক্ষেতে নব আউশ ধান,<br>
-                                রসে পূর্ণতার ঝলক মরুর গাছ।<br>
-                                মরণও ক্ষণে ফিরে জীব তরু-শস্য<br>
-                                ভবিষ্যৎ বাণী কৃষাণ করে তৈরি,<br>
-                                সেই প্রতীক্ষিত বৃষ্টি কৃষাণ তৃপ্তি॥<br>
-                            </p>
-                        </div>
-
+                </div>
+                <div class="col-md-6 d-flex justify-content-center align-items-center">
+                    <div class="hero-text" data-aos="fade-left">
+                        <h1>Mohammad <span class="text-hero">Hannan</span> </h1>
+                        <h4 class="text-writer">Writer <span class="autorIcon"><i class="fas fa-pen-alt text-white"></i></span></h4>
+                        <h5>বাণী___</h5>
+                        <p>আদর্শ ও নীতির কথাগুলো সংক্ষেপে বাণী ।</p>
+                        <p>মানিলে বাণীতে ফোঁটে ফুল পদ্মা-বকুল ।</p>
                     </div>
-
                 </div>
             </div>
-        </section>
-        <section class="ukti-section">
-            <div class="ukti">
-                <div class="ukti-body">
-                    <h5 class="ukti-title">বাণী___</h5>
-                    <p class="ukti-text">
-                        ভাবনাবিহীন থাকতো যদি কোনো জগত,<br>
-                        তাহলে আমি থাকতাম নির্বোধ- বোকা এবং<br>
-                        জ্ঞানবিহীন। ভাবনাকে ভাবা মানবের জন্য <br>
-                        জ্ঞানের ন্যায়।<br>
-                    </p>
-                    <div class="ukti-footer"> <p class="ukti-link">মোহাম্মদ হান্নান </p></div>
-                </div>
+        </div>
+      </section>
 
-                <div class="ukti-body">
-                    <h5 class="ukti-title">প্রেম____</h5>
-                    <p class="ukti-text">
-                        প্রেম হলো অহরহ, <br>
-                        কাঁদিলাম কত শত,<br>
-                        এখন খালি কলস, ফাঁকা মন।<br>
-                    </p>
-                    <div class="ukti-footer"> <p class="ukti-link">মোহাম্মদ হান্নান </p></div>
-                </div>
-
-                <div class="ukti-body">
-                    <h5 class="ukti-title">So What?</h5>
-                    <p class="ukti-text">
-                        এই পৃথিবীর মানব গুলো খুবই বিস্মিত ও অদ্ভুত! <br>
-                        আঘাত দিয়ে বলবে- ব্যথা পেয়েছো? অশ্রু ঝরিয়ে বলবে- <br>
-                        তুমি কাঁদছো কেন? শত শত যন্ত্রণার মধ্যে রেখে বলবে- তুমি <br>
-                        এত নিরব কেন? <br>
-                    </p>
-                    <div class="ukti-footer"> <p class="ukti-link">মোহাম্মদ হান্নান </p></div>
-                </div>
-
-                <div class="ukti-body">
-                    <h5 class="ukti-title">উক্তি____</h5>
-                    <p class="ukti-text">
-                        পবিত্র আত্মা-  <br>
-                        একে দ্বারস্থ হয়, <br>
-                        একে-অধিক নহে। <br>
-                    </p>
-                    <div class="ukti-footer"> <p class="ukti-link">মোহাম্মদ হান্নান </p></div>
-                </div>
-
-                <div class="ukti-body">
-                    <h5 class="ukti-title">দেশপ্রেম____</h5>
-                    <p class="ukti-text">
-                        মা তুমি অতুল অপরূপ-  <br>
-                        বিশ্ব ন্যায় বিনয় ও নম্র শ্রদ্ধায়, <br>
-                        নত করি মাথা তোর চরণ নিচে, <br>
-                        তুমি প্রাচুর্যে ও সমাচ্ছন্ন সবুজে-আমার বাংলা! <br>
-                    </p>
-                    <div class="ukti-footer"> <p class="ukti-link">মোহাম্মদ হান্নান </p></div>
-                </div>
-            </div>
-        </section>
-        <section class="container poem-area">
-            <div class="poem-section">
-                <div class="row">
-                    <div class="col-md-6 d-flex justify-content-center align-items-center">
-                        <div class="poem-img">
-                            <img src="images/bg-2.jpg" class="img-fluid" alt="">
-                        </div>
+      <section class="container poem-area">
+        <div class="poem-section">
+            <div class="row">
+                <div class="col-md-6 d-flex justify-content-center align-items-center">
+                    <div class="poem-img">
+                        <img src="images/bg-2.jpg" class="img-fluid" alt="">
                     </div>
-                    <div class="col-md-6">
-                        <div class="main-poem">
-                            <p class="poem-title">জল </p>
-                            <p class="poem-writer">মোহম্মদ হান্নান </p>
-                            <p class="poem-text">
-                                প্রভাতে, পদ্ম পাতার জলে,  <br>
-                                ফুলের কলি গুলো ফোটে। <br>
-                                রােজ সকালের পড়নে, <br>
-                                ঘাস গুলো শিশিরের <br>
-                                বিন্দু বিন্দু জলে। <br>
- <br>
-                                প্রকৃতি মরণ পানে, <br>
-                                মেঘ ঝরে জলে। <br>
-                                পথিক প্রচণ্ড ক্লান্তি বাধে, <br>
-                                দেহ ঘামে অম্ল জলে। <br>
-                                গরমে পিপাসায় পয়-গম্বর, <br>
-                                ভরগম মেটে জলে। <br>
- <br>
-                                অষ্ঠ অভাবের টিঁড়ে, <br>
-                                দু'চোখ ভরা জলে। <br>
-                                সাগর ও নদী বয়ে, <br>
-                                জলে শত নদ-নলে। <br>
-                                মানুষ কর্মের ফলে, <br>
-                                রােদে ভিজে জলে। <br>
- <br>
-                                তীব্র তাপ ফসলের মাঠে- <br>
-                                কৃষক করুণায় ডাকে, <br>
-                                নয়ন ভরা জলে <br>
-                                আয় বৃষ্টি আয়। <br>
- <br>
-                                অসৎ উন্নতির আয়ে- <br>
-                                যেথায় আশা বাঁধে, <br>
-                                দুঃখ আসে জলে। <br>
- <br>
-                                অসৎ উন্নতির আয়ে- <br>
-                                গুচ্ছ যাহার আলে, <br>
-                                ভেঙ্গে পরে জলে। <br>
- <br>
-                                অসৎ উন্নতির আয়ে- <br>
-                                জীবন যাহার সুখে <br>
-                                ওগাে, রহে না ঘরে <br>
-                                ক্ষণিক ঢেউ এসে, <br>
-                                অসম রাশ জলে। <br>
- <br>
-                                সৎ উৎসের সংসারে, <br>
-                                স্বাচ্ছন্দে কাটে দিন। <br>
-                                ঈশ্বর কৃপায় ধরায়, <br>
-                                বীজে প্রাণবন্তর হয়। <br>
- <br>
-                                পরিশ্রুত স্বচ্ছ আহারে তৃপ্তি, <br>
-                                পরম শান্তি সর্ব-জলে। <br>
-                                কোলাহল প্রাণির দল- <br>
-                                ওগাে জল ছলছল, <br>
-                                প্রাণে আসে বীরবল। <br>
- <br>
-                                হে জল কিঞ্চিৎ মাত্র- <br>
-                                ক্ষয় নাই, ক্ষয় নাই, <br>
-                                তুমি পৃথিবীতে রেখাময়। <br>
-                                হে জল অথৈই মহাল, <br>
-                                তুমি জীবিত অনন্তকাল। <br>
-                            </p>
-                        </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="main-poem">
+                        <p class="poem-title">প্রতীক্ষিত কৃষাণের দৃষ্টি</p>
+                        <p class="poem-writer">মোহম্মদ হান্নান </p>
+                        <p class="poem-text">
+                            বাহু বলে দু'হাত তুলে ধ্যানমগ্ন কৃষাণ; <br>
+                            প্রভুর চরণ ধূলােয় ভ্রাম্য বিচারে চাহি। <br>
+                            আমারি ক্ষেতের ফসল গুলো তৃষ্ণীয় মরা,<br>
+                            তপ্ত-বালুকায় কাণ্ড ফুলও গিয়াছে শুকি।<br>
+                            আষাঢ় সাধ বুকে লয়ে শূন্য মাঠে,<br>
+                            প্রান্তরে বসে আকৃতি দয়াময় দৃষ্টি।<br>
+                            মাটি ফেটে চৌচির চাষ যােগ্য জমি,<br>
+                            কর্কশ খরা পড়িছে ফসলিত ঘরয়ায়।<br>
+                            আশার ঠাই রহিবে না-কি পরের জন্মে,<br>
+                            করুণ ক্রন্দন হা-হা কার কৃষাণ থুলি।<br>
+                            কৃষাণ দলে দলে চাহি গগণে তাকাইয়া,<br>
+                            আহ্বানে মােহন মায়ার গানে সুরে-সুরে,<br>
+                            “আল্লাহ মেঘ দে-বৃষ্টি দে-ছায়া দে'রে তুই”<br>
+                            তাের জপে মুই, কৃষাণ-কৃষাণ-কৃষাণ,<br>
+                            আসে মেঘপুঞ্জ প্রতীক্ষিত সৃষ্টির বৃষ্টি।<br> <br>
 
+                            রাশি রাশি খর-স্রোত কৃষাণ দল,<br>
+                            বৃষ্টি নামায় দুই আঁখির ঢল।<br>
+                            মেঘে মেঘে নতুন রূপে সাড়া,<br>
+                            আঁধারের তাঁরা বাড়ায় ঝড়।<br>
+                            হাসি হাসি কৃষাণ পরাণ বাঁচি,<br>
+                            মাটির গায়ে শান্ত ধারার জল।<br>
+                            ছােট ছােট বীজ অঙ্কুর পাতি,<br>
+                            জেগে ওঠে লতা-পাতা সাগর।<br>
+                            প্রাণে প্রাণে ধূসর শুষ্ক চাদর,<br>
+                            বৃষ্টি ভরে আবাদি ফসল গুলি।<br>
+                            ক্ষেতে ক্ষেতে নব আউশ ধান,<br>
+                            রসে পূর্ণতার ঝলক মরুর গাছ।<br>
+                            মরণও ক্ষণে ফিরে জীব তরু-শস্য<br>
+                            ভবিষ্যৎ বাণী কৃষাণ করে তৈরি,<br>
+                            সেই প্রতীক্ষিত বৃষ্টি কৃষাণ তৃপ্তি॥<br>
+                        </p>
                     </div>
 
                 </div>
+
             </div>
-        </section>
+        </div>
+    </section>
+    <section class="ukti-section">
+        <div class="ukti">
+            <div class="ukti-body">
+                <h5 class="ukti-title">বাণী___</h5>
+                <p class="ukti-text">
+                    ভাবনাবিহীন থাকতো যদি কোনো জগত,<br>
+                    তাহলে আমি থাকতাম নির্বোধ- বোকা এবং<br>
+                    জ্ঞানবিহীন। ভাবনাকে ভাবা মানবের জন্য <br>
+                    জ্ঞানের ন্যায়।<br>
+                </p>
+                <div class="ukti-footer"> <p class="ukti-link">মোহাম্মদ হান্নান </p></div>
+            </div>
+
+            <div class="ukti-body">
+                <h5 class="ukti-title">প্রেম____</h5>
+                <p class="ukti-text">
+                    প্রেম হলো অহরহ, <br>
+                    কাঁদিলাম কত শত,<br>
+                    এখন খালি কলস, ফাঁকা মন।<br>
+                </p>
+                <div class="ukti-footer"> <p class="ukti-link">মোহাম্মদ হান্নান </p></div>
+            </div>
+
+            <div class="ukti-body">
+                <h5 class="ukti-title">So What?</h5>
+                <p class="ukti-text">
+                    এই পৃথিবীর মানব গুলো খুবই বিস্মিত ও অদ্ভুত! <br>
+                    আঘাত দিয়ে বলবে- ব্যথা পেয়েছো? অশ্রু ঝরিয়ে বলবে- <br>
+                    তুমি কাঁদছো কেন? শত শত যন্ত্রণার মধ্যে রেখে বলবে- তুমি <br>
+                    এত নিরব কেন? <br>
+                </p>
+                <div class="ukti-footer"> <p class="ukti-link">মোহাম্মদ হান্নান </p></div>
+            </div>
+
+            <div class="ukti-body">
+                <h5 class="ukti-title">উক্তি____</h5>
+                <p class="ukti-text">
+                    পবিত্র আত্মা-  <br>
+                    একে দ্বারস্থ হয়, <br>
+                    একে-অধিক নহে। <br>
+                </p>
+                <div class="ukti-footer"> <p class="ukti-link">মোহাম্মদ হান্নান </p></div>
+            </div>
+
+            <div class="ukti-body">
+                <h5 class="ukti-title">দেশপ্রেম____</h5>
+                <p class="ukti-text">
+                    মা তুমি অতুল অপরূপ-  <br>
+                    বিশ্ব ন্যায় বিনয় ও নম্র শ্রদ্ধায়, <br>
+                    নত করি মাথা তোর চরণ নিচে, <br>
+                    তুমি প্রাচুর্যে ও সমাচ্ছন্ন সবুজে-আমার বাংলা! <br>
+                </p>
+                <div class="ukti-footer"> <p class="ukti-link">মোহাম্মদ হান্নান </p></div>
+            </div>
+        </div>
+    </section>
+    <section class="container poem-area">
+        <div class="poem-section">
+            <div class="row">
+                <div class="col-md-6 d-flex justify-content-center align-items-center">
+                    <div class="poem-img">
+                        <img src="images/bg-2.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="main-poem">
+                        <p class="poem-title">জল </p>
+                        <p class="poem-writer">মোহম্মদ হান্নান </p>
+                        <p class="poem-text">
+                            প্রভাতে, পদ্ম পাতার জলে,  <br>
+                            ফুলের কলি গুলো ফোটে। <br>
+                            রােজ সকালের পড়নে, <br>
+                            ঘাস গুলো শিশিরের <br>
+                            বিন্দু বিন্দু জলে। <br>
+<br>
+                            প্রকৃতি মরণ পানে, <br>
+                            মেঘ ঝরে জলে। <br>
+                            পথিক প্রচণ্ড ক্লান্তি বাধে, <br>
+                            দেহ ঘামে অম্ল জলে। <br>
+                            গরমে পিপাসায় পয়-গম্বর, <br>
+                            ভরগম মেটে জলে। <br>
+<br>
+                            অষ্ঠ অভাবের টিঁড়ে, <br>
+                            দু'চোখ ভরা জলে। <br>
+                            সাগর ও নদী বয়ে, <br>
+                            জলে শত নদ-নলে। <br>
+                            মানুষ কর্মের ফলে, <br>
+                            রােদে ভিজে জলে। <br>
+<br>
+                            তীব্র তাপ ফসলের মাঠে- <br>
+                            কৃষক করুণায় ডাকে, <br>
+                            নয়ন ভরা জলে <br>
+                            আয় বৃষ্টি আয়। <br>
+<br>
+                            অসৎ উন্নতির আয়ে- <br>
+                            যেথায় আশা বাঁধে, <br>
+                            দুঃখ আসে জলে। <br>
+<br>
+                            অসৎ উন্নতির আয়ে- <br>
+                            গুচ্ছ যাহার আলে, <br>
+                            ভেঙ্গে পরে জলে। <br>
+<br>
+                            অসৎ উন্নতির আয়ে- <br>
+                            জীবন যাহার সুখে <br>
+                            ওগাে, রহে না ঘরে <br>
+                            ক্ষণিক ঢেউ এসে, <br>
+                            অসম রাশ জলে। <br>
+<br>
+                            সৎ উৎসের সংসারে, <br>
+                            স্বাচ্ছন্দে কাটে দিন। <br>
+                            ঈশ্বর কৃপায় ধরায়, <br>
+                            বীজে প্রাণবন্তর হয়। <br>
+<br>
+                            পরিশ্রুত স্বচ্ছ আহারে তৃপ্তি, <br>
+                            পরম শান্তি সর্ব-জলে। <br>
+                            কোলাহল প্রাণির দল- <br>
+                            ওগাে জল ছলছল, <br>
+                            প্রাণে আসে বীরবল। <br>
+<br>
+                            হে জল কিঞ্চিৎ মাত্র- <br>
+                            ক্ষয় নাই, ক্ষয় নাই, <br>
+                            তুমি পৃথিবীতে রেখাময়। <br>
+                            হে জল অথৈই মহাল, <br>
+                            তুমি জীবিত অনন্তকাল। <br>
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
     </main>
-    <!-- Optional JavaScript -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="js/script.js"></script>
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-</body>
 
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <img src="images/logo.png" height="80px" class=" mb-3 text-center">
+            <ul class="footer-links">
+              <li><a href="#"></a>sayingsbyhannan@gmail.com</li>
+            </ul>
+          </div>
+  
+          <div class="col-xs-6 col-md-3">
+            <!-- <h6>Services</h6>
+            <ul class="footer-links">
+              <li><a href="#">Photography</a></li>
+              <li><a href="#">Videography</a></li>
+              <li><a href="#">Wedding Planning Service</a></li>
+              <li><a href="#">Arts & Entertainment</a></li>
+            </ul> -->
+          </div>
+  
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="#">About Me</a></li>
+              <li><a href="#">Contact Me</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; Sayings By Hannan<br />
+              Developed by
+              <a href="https://www.facebook.com/profile.php?id=100008591616145">Prince Ahmed &#10084;&#65039;</a>
+            </p>
+          </div>
+  
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"> <i class="fab fa-facebook"></i> </a></li>
+              <li><a class="twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+              <li><a class="dribbble" href="#"><i class="fab fa-instagram"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+    
+
+   
+    <!-- Optional JavaScript -->
+    <script src="js/main.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
 </html>
