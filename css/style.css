@@ -154,6 +154,7 @@ body{
     border-radius: 10px;
     padding: 10px;
     margin: 20px 0;
+    width: 100%;
 }
 .poem-title{
     color: rgb(255, 255, 255);
@@ -179,7 +180,7 @@ body{
 }
 .ukti-body{
     width:300px;
-    background-color: rgba(149, 194, 207, 0.151);
+    /* background-color: rgba(149, 194, 207, 0.151); */
     padding: 25px 30px;
     margin: 10px;
     color: #fff;
