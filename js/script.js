@@ -14,12 +14,7 @@ document.addEventListener("DOMContentLoaded", function(){
     });
   }); 
 
-// sidebar handler
-const menuBtn = document.getElementById('menuBtn');
-menuBtn.addEventListener('click', ()=>{
-    let width = document.getElementById('sidebarArea').style.width;
-    document.getElementById('sidebarArea').style.width = "230px";
-});
-document.getElementById('cross').addEventListener('click', ()=>{
-    document.getElementById('sidebarArea').style.width = "0";
+
+AOS.init({
+    duration: 1200,
 });
