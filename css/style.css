@@ -14,7 +14,7 @@
 body{
     font-family: 'Roboto', sans-serif;
     color: var(--dark-text);
-    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('../images/bg.png');
+    background-image:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url('../images/bg.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -30,28 +30,28 @@ hr{
 .navbar{
     padding: 0 7%;
     padding-bottom: 10px;
-    background-color: rgba(0,0,0,0.9);
+    background-color: rgba(255, 255, 255, 0.589);
     border-bottom: 1px solid lightgray;
 }
 .navbar-brand{
     font-family: 'Norican', cursive;
     font-size: 25px;
     font-weight: 500;
-    color: #fcce03;
+    color: #000;
 }
 .navbar-brand:hover{
-    color: var(--main-color);
+    color: #fcce03;
 }
 .ham-icon i{
     font-size: 25px;
-    color: #fcce03;
+    color: #000;
 }
 .nav-item{
     margin: 5px 7px;
 }
 .nav-item a{
     font-size: 17px;
-    color: #fcce03;
+    color: #000;
     font-weight: 500;
     transition: 0.1s ease-in;
 }
@@ -61,16 +61,18 @@ hr{
     width: 30px;
     text-align: center;
     padding-top: 5px;
-    color: 	var(--main-color);
-    border: 1px solid #fcce03;
+    color: #000;
+    background-color: #fcce03;
+   
     border-radius: 50%;
 }
 .nav-item a i:hover{
-    background-color: #fcce03;
-    color: 	#fff;
+    background-color: transparent;
+    color: 	#fcce03;
+    border: 1px solid #fcce03;
 }
 .nav-item a:hover{
-    color: 	#fff;
+    color: 	#fcce03;
 }
 
 /* Hero area */
@@ -81,6 +83,8 @@ hr{
 }
 .hero-text {
     line-height: 18px;
+    padding: 20px 5px;
+    background-color: rgba(255, 255, 255, 0.589);
 }
 .hero-text h1{
     font-size: 25px;
@@ -101,7 +105,6 @@ hr{
 .text-hero{
     color: var(--dark-text);
     font-weight: 600;
-    text-shadow: 2px 2px 10px #272727;
 }
 .hero-img{
     text-align: center;
@@ -109,6 +112,12 @@ hr{
 .hero-img img{
     height: 200px;
     margin: 10px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 20px gray;
+    transition: 0.5s ease-in-out;
+}
+.hero-img img:hover{
+    scale: 1.1;
 }
 
 /* Cate */
@@ -122,8 +131,8 @@ hr{
 .cate li{
     margin: 2px ;
     padding: 5px 20px;
-    border: 1px solid #333;
-    background-color: rgba(149, 194, 207, 0.138);
+    background-color: rgba(255, 255, 255, 0.589);
+    box-shadow: 5px 5px 20px gray;
 }
 .cate li a{
     color: var(--text-color);
