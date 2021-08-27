@@ -155,7 +155,7 @@ hr{
 /* == poem-section =====*/
 
 .poem-section{
-    margin-top: 50px;
+    margin: 50px 0;
 }
 .poem{
     flex-direction: column;
@@ -249,11 +249,7 @@ hr{
    margin-top:5px;
    letter-spacing:2px
  }
- .site-footer a
- {
-    text-decoration: none;
-   color:#737373;
- }
+
  .site-footer a:hover
  {
    color:#3366cc;
@@ -262,7 +258,6 @@ hr{
  .footer-links
  {
    padding-left:0;
-   list-style:none
  }
  .footer-links li
  {
@@ -271,6 +266,9 @@ hr{
  .footer-links a
  {
    color:#737373
+ }
+ .text-blue{
+     color: #3366cc;
  }
  .footer-links a:active,.footer-links a:focus,.footer-links a:hover
  {
